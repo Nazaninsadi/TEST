@@ -1,0 +1,45 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* background */
+}
+
+/* Container for both grids */
+.container {
+    display: flex; /* side by side */
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 1 row, 4 columns */
+    gap: 15px; /* Spacing inside of grids */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 50px; /* Space between two grids(its outside of it) */
+}
+
+.grid-container:last-child {
+    margin-right: 0; /* No margin on the last grid */
+}
+
+/* Grid Item Styling */
+.grid-item {
+    background-color: #d96ba4;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
